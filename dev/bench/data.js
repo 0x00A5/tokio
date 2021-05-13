@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620875327553,
+  "lastUpdate": 1620875337419,
   "repoUrl": "https://github.com/lyuyuan/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -533,6 +533,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1078,
             "range": "± 184",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "te316e89@gmail.com",
+            "name": "Taiki Endo",
+            "username": "taiki-e"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9ff7d8c3525bfbe1493aebe89b5e8d455f02f1eb",
+          "message": "net: hide net::unix::datagram module from docs (#3775)",
+          "timestamp": "2021-05-10T04:35:09+09:00",
+          "tree_id": "667e2529d24d3461f07a09a31850163f00105dc4",
+          "url": "https://github.com/lyuyuan/tokio/commit/9ff7d8c3525bfbe1493aebe89b5e8d455f02f1eb"
+        },
+        "date": 1620875336280,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 13648,
+            "range": "± 2909",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 828,
+            "range": "± 99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 565,
+            "range": "± 115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 13701,
+            "range": "± 3255",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 830,
+            "range": "± 195",
             "unit": "ns/iter"
           }
         ]
